@@ -20,10 +20,11 @@
   
   .section {
     margin-top: 20px;
-    width: 388px;
+    width: 588px;
 height: 498px;
-top: 559px;
-left: 43px;
+
+border-radius: 15px;
+
 background-color: #D9D9D95E;
   }
   
@@ -43,11 +44,10 @@ background-color: #D9D9D95E;
 
   .sectionsec {
     margin-top: 20px;
-    width: 388px;
-height: 498px;
-top: 559px;
-left: 43px;
+    width: 588px;
+height: 358px;
 
+border-radius: 15px;
 background-color: #D9D9D95E;
 margin-left:12px ;
   }
@@ -159,4 +159,5 @@ margin-left: 12px;
 
  .noreste{
   color: #292355;
+  padding-left: -22px;
  }
