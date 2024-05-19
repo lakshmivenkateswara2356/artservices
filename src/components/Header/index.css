@@ -28,6 +28,15 @@ text-align: center;
 
   }
 
+  .topnakvs {
+    color: #818181 !important;
+  }
+
+  .topnakvs:hover {
+    color: #527442 !important;
+  }
+
+
   .trackypurorder {
     
     font-family: Inter;
