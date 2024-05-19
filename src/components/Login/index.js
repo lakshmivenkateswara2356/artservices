@@ -29,7 +29,7 @@ const LoginPage = () => {
           <label>
             <input type="password" className="password-input" name="password" placeholder="Password" value={credentials.password} onChange={handleChange} />
           </label>
-          <button allert="success" type="submit">Login</button>
+          <button className="getestimatebutoneee" allert="success" type="submit">Login</button>
         </form>
       </div>
     </div>
