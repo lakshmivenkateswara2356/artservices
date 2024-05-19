@@ -43,7 +43,7 @@ function ServiceForm() {
 
   return (
     <div>
-      <div >
+      <div className="locationarr">
           {formData.serviceType === 'domestic' ? (
             <select className="countryhooli"
               name="state"
