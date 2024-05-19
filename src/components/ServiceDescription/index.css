@@ -57,21 +57,18 @@ margin-left:12px ;
   }
   
   .addingbackground {
-    width: 50%;
+   
     text-align: left;
-    background-image: url(newimage.jpg); /* Adjust the path accordingly */
-    
+    background-image: url(newimage.jpg); 
     background-size: cover;
     background-position: center;
     height: 450px;
     width: 750px;
     background-color: black;
-    backdrop-filter: blur 120px;
-    
     padding: 20px;
     border-radius: 10px;
     color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    
   }
   
   .service-description h1 {
