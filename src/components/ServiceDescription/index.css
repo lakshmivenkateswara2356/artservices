@@ -59,19 +59,32 @@ margin-left:12px ;
   .addingbackground::before{
     content: "";
     background-image: url(newimage.jpg); 
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    
     position: absolute;
     z-index: -1;
     opacity: 0.5;
-    height: 450px;
-    width: 750px;
+    height: 500px;
+    width: 800px;
     margin-top: -22px;
     background-color: black;
     border-radius: 10px;
     color: white;
   }
 
+  .parahiglightrrr {
+    
+font-size: 55.63px !important;
+font-weight: bold !important;
+line-height: 52.8px;
+text-align: left;
+color: #292355!important;
+
+margin-left: 12px;
+border-color: black;
+border-width: 1px;
+
+  }
 
   .service-description h1 {
     font-size: 2em;
@@ -106,24 +119,25 @@ margin-left:12px ;
   .mainhedd {
     color: #292355 !important;
     font-weight: bold !important;
+    margin-left: 42px;
+    padding-top: 22px;
   }
 
  .Fineartsecs{
     color: #646464 !important;
-    ;
-    font-family: Inter;
-font-size: 43.89px !important;
+     margin-left: 42px;
+     font-size: 65px !important;
+margin-top: -20px;
 font-weight: 700;
 line-height: 53.12px;
-text-align: left;
+
 
  }
 
  .minibackeff {
-    width: 459px;
-height: 118px;
+    width: 559px;
+height: 138px;
 top: 157px;
-
 border-radius: 0px 30px 30px 0px;
 
 background: #EBE9FF9E;
@@ -137,5 +151,6 @@ font-weight: 700 !important;
 line-height: 52.8px;
 text-align: left;
 color: #292355 !important;
+margin-left: 12px;
 
  }

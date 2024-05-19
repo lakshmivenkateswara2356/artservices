@@ -6,9 +6,9 @@ const ServiceDescription = () => (
     <div className="addingbackground">
         <div className="minibackeff">
         <h1 className="mainhedd">BOOK YOUR SERVICE NOW</h1>
-    <h1 className="Fineartsecs">Fine Art Service</h1>
+    <h1 className="Fineartsecs">Fine art service</h1>
     </div>
-    <p className="parahiglight">ON TIME DELIVERY</p>
+    <p className="parahiglightrrr">ON TIME DELIVERY</p>
     <p className="parahiglight">ECONOMICAL PRICE</p>
     <p className="parahiglight">ZERO DAMAGE POLICY</p>
    
