@@ -1,5 +1,4 @@
 import React from 'react';
-import newimage from "../../Assets/newimage.jpg"
 import './index.css';
 
 const ServiceDescription = () => (
