@@ -120,7 +120,7 @@ function ServiceForm() {
         </div>
         <div>
           <label className="pickuplokk">Contact</label>
-          <input className="pickokdnnd"
+          <input className="pickokdnndconta"
             type="text"
             name="contact"
             value={formData.contact}
@@ -130,7 +130,7 @@ function ServiceForm() {
         </div>
         <div>
           <label className="pickuplokk">Shipping Date</label>
-          <input className="pickokdnndee"
+          <input className="pickokdnnd"
             type="date"
             name="date"
             

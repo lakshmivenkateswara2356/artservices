@@ -86,17 +86,18 @@ margin-left: 190px;
 }
 
 .pickokdnnd {
-    border-radius: 12px;
+    border-radius: 9px;
    border-width: 1px;
    border-color:#DADADA;
+   border-style: solid;
 
 }
 
-.pickokdnndee {
+.pickokdnndconta {
     border-radius: 12px;
    border-width: 0px;
    border-color:#DADADA;
-   width: 12px;
+  width: 5px;
 
 }
 
