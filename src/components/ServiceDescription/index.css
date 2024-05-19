@@ -121,12 +121,13 @@ border-width: 1px;
     font-weight: bold !important;
     margin-left: 42px;
     padding-top: 22px;
+    font-size: 30px !important;
   }
 
  .Fineartsecs{
     color: #646464 !important;
      margin-left: 42px;
-     font-size: 65px !important;
+     font-size: 56px !important;
 margin-top: -20px;
 font-weight: 700;
 line-height: 53.12px;
