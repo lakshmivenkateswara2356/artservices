@@ -16,7 +16,6 @@
   .description-sections {
     display: flex;
     flex-direction: row !important;
-    color: red;
   }
   
   .section {
@@ -29,7 +28,6 @@ gap: 0px;
 border-radius: 12px 0px 0px 0px;
 opacity: 0px;
 background-color: #D9D9D95E;
-color: red;
 
 
   }
