@@ -56,22 +56,22 @@ background-color: #D9D9D95E;
 margin-left:12px ;
   }
   
-  .addingbackground {
-   
-    text-align: left;
+  .addingbackground::before{
+    content: "";
     background-image: url(newimage.jpg); 
-    
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
     height: 450px;
     width: 750px;
     background-color: black;
-    padding: 20px;
     border-radius: 10px;
     color: white;
-    
   }
-  
+
+
   .service-description h1 {
     font-size: 2em;
   }
