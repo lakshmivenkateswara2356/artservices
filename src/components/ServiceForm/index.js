@@ -42,24 +42,8 @@ function ServiceForm() {
   };
 
   return (
-    <div className="service-form">
-    
-      <div className="service-type-buttons">
-        <button 
-          className={`sticelem ${formData.serviceType === 'domestic' ? 'active' : ''}`} 
-          onClick={() => setFormData({ ...formData, serviceType: 'domestic' })}
-        >
-          Domestic
-        </button>
-        <button
-          className={`sticelem2 ${formData.serviceType === 'international' ? 'active' : ''}`}
-          onClick={() => setFormData({ ...formData, serviceType: 'international' })}
-        >
-          International
-        </button>
-      </div>
-      <form  onSubmit={handleSubmit}>
-        <div >
+    <div>
+      <div >
           {formData.serviceType === 'domestic' ? (
             <select className="countryhooli"
               name="state"
@@ -94,6 +78,26 @@ function ServiceForm() {
           )}
           {errors.country && <span className="error">{errors.country}</span>}
         </div>
+    <div className="service-form">
+      
+    
+      <div className="service-type-buttons">
+        <button 
+          className={`sticelem ${formData.serviceType === 'domestic' ? 'active' : ''}`} 
+          onClick={() => setFormData({ ...formData, serviceType: 'domestic' })}
+        >
+          Domestic
+        </button>
+        <button
+          className={`sticelem2 ${formData.serviceType === 'international' ? 'active' : ''}`}
+          onClick={() => setFormData({ ...formData, serviceType: 'international' })}
+        >
+          International
+        </button>
+      </div>
+      
+      <form  onSubmit={handleSubmit}>
+        
         <div>
           <label className="pickuplokk">Pick up location</label>
           <input className="pickokdnnd"
@@ -137,6 +141,7 @@ function ServiceForm() {
         </div>
         <button className="getestimatebuton" type="submit">Get estimate</button>
       </form>
+    </div>
     </div>
   );
 }
