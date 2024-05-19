@@ -25,7 +25,7 @@ const ServiceDescription = () => (
 The cargo area of the truck should be clean and free of any loose objects/particles.
 Works should be crated for transportation, as per Museum specifications.
 Crates should be strapped or wedged so that they cannot move about when in transit.
-There should be a minimum of two UAPL staff  with the works in transit, at all times, other than when the shipments are on board vessel or on the aircraft or accompanied by a courier designated by the lender/Museum/Art Gallery/Organiser.
+There should be a minimum of two UAPL staff with the works in transit, at all times, other than when the shipments are on board vessel or on the aircraft or accompanied by a courier designated by the lender/Museum/Art Gallery/Organiser.
 Loading/Unloading of works into the trucks in strong wind or rain is to be avoided, unless required in an emergency.      
         </ul>
       </div>
