@@ -24,16 +24,12 @@
 height: 498px;
 top: 559px;
 left: 43px;
-
-
 background-color: #D9D9D95E;
-
-
   }
   
   .section h2 {
     font-size: 1.5em;
-    color: #333;
+    
   }
   
   .section ul {
@@ -154,4 +150,13 @@ text-align: left;
 color: #292355 !important;
 margin-left: 12px;
 
+ }
+
+ .transco{
+  color: #292355;
+  text-align: center;
+ }
+
+ .noreste{
+  color: #292355;
  }

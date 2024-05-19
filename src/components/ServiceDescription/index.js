@@ -16,8 +16,9 @@ const ServiceDescription = () => (
     </div>
     <div className="description-sections">
       <div className="section">
-        <h2>Transportation</h2>
-        <ul>
+        
+        <h2 className="transco">Transportation</h2>
+        <ul className="noreste">
           <li>Transportation by road should be in fully closed hard walled secured trucks...</li>
           <li>Works should be crated for transportation...</li>
           <li>Crates should be strapped or wedged...</li>
@@ -30,8 +31,8 @@ Loading/Unloading of works into the trucks in strong wind or rain is to be avoid
         </ul>
       </div>
       <div className="sectionsec">
-        <h2>Airport Supervision</h2>
-        <ul>
+        <h2 className="transco">Airport Supervision</h2>
+        <ul className="noreste">
           <li>To handle successful fine art consignment...</li>
           To handle successful fine art consignment is to have maximum control on the consignment starting from packing, handling, transportation and handover to airlines.
 The key is to go one step more and oversee the handling at airport, 
