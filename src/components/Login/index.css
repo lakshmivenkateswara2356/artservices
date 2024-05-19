@@ -1,0 +1,47 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Added a background color */
+  }
+  
+  .login-box {
+    background-color: #ffffff; /* Added a background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 20px;
+    color: #333333; /* Adjusted text color */
+  }
+  
+  .username-input,
+  .password-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc; /* Adjusted input border color */
+    border-radius: 5px;
+    box-sizing: border-box; /* Added box sizing */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added smooth transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

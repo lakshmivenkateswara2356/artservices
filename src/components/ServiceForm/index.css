@@ -1,0 +1,89 @@
+.pickuplokk {
+    font-family: Inter !important;
+font-size: 12.67px !important;
+font-weight: 700;
+line-height: 15.33px;
+text-align: left;
+
+}
+
+ .sticelem{
+font-family: Inter;
+font-size: 12.67px;
+font-weight: 700;
+line-height: 15.33px;
+text-align: left;
+width: 90px !important;
+height: 35px !important;
+background-color:gray;
+color: white;
+border-radius: 20px;
+text-align: center;
+
+margin-right: 32px;
+
+}
+
+.sticelem2{
+    font-family: Inter;
+font-size: 12.67px;
+font-weight: 700;
+line-height: 15.33px;
+text-align: left;
+width: 90px !important;
+height: 35px !important;
+background-color:#ECECEC;
+
+color:gray;
+border-radius: 20px;
+text-align: center;
+
+
+
+}
+
+.aligniniitemsorder {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    margin: 12px;
+}
+
+.servicetypeeleem {
+    width: 120px;
+    height: 34px;
+    border-radius: 12px;
+    border-width: 0px;
+}
+
+.countryhooli {
+    width: 120px;
+    height: 34px;
+    border-radius: 12px;
+    border-width: 0px;
+    font-family: Inter;
+font-size: 17.49px;
+font-weight: 700;
+line-height: 21.16px;
+text-align: left;
+
+}
+
+.getestimatebuton{
+    background-color: #004019;
+    font-family: Inter;
+font-size: 12.67px;
+font-weight: 700;
+line-height: 15.33px;
+text-align: center;
+width: 190px;
+margin-left: 190px;
+
+}
+
+.pickokdnnd {
+    border-radius: 12px;
+   border-width: 1px;
+   border-color:#DADADA;
+
+}

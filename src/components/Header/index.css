@@ -21,7 +21,11 @@
   }
   
   .uaplimageedit {
-    
+    width: 209px !important;
+height: 69.67px !important;
+
+text-align: center;
+
   }
 
   .trackypurorder {
@@ -30,13 +34,21 @@
     font-size: 16px;
     font-weight: bold !important;
     line-height: 19.36px;
-    background: #292355;
+    
 
     text-align: left;
     
 
   }
 
-  .topnakvs {
-    color: red !important;
+
+  .homeHedi{
+    text-decoration: none;
+  }
+
+  .trackimageadjust {
+    height: 80px;
+    width: 140px;
+    margin-top: -12px;
+    margin-right: 82px;
   }

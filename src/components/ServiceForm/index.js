@@ -1,107 +1,144 @@
 import React, { useState } from 'react';
+import './index.css';
 
-
-// List of countries (this can be a more comprehensive list)
-const countries = [
-  "United States",
-  "Canada",
-  "United Kingdom",
-  "Australia",
-  "India",
-  "Germany",
-  "France",
-  "China",
-  "Japan",
-  "Brazil",
-  "South Africa",
-  "Russia"
-];
-
-const ServiceForm = () => {
+function ServiceForm() {
   const [formData, setFormData] = useState({
-    serviceType: 'Domestic', // Default value
-    country: '', // Default value for country
-    pickupLocation: '',
-    dropoffLocation: '',
+    serviceType: 'domestic',
+    pickup: '',
+    drop: '',
     contact: '',
-    shippingDate: ''
+    date: '',
+    country: '',
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.pickup) newErrors.pickup = 'Pick up location is required';
+    if (!formData.drop) newErrors.drop = 'Drop up location is required';
+    if (!formData.contact) newErrors.contact = 'Contact is required';
+    if (!formData.date) newErrors.date = 'Shipping date is required';
+    if (formData.serviceType === 'international' && !formData.country) {
+      newErrors.country = 'Country is required for international service';
+    }
+    return newErrors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length === 0) {
+      console.log('Form submitted', formData);
+      // Simulate API call
+      alert('Estimate requested successfully');
+    } else {
+      setErrors(formErrors);
+    }
   };
 
   return (
     <div className="service-form">
-     
-      <form onSubmit={handleSubmit}>
-        <label>
-          Service Type:
-          <select name="serviceType" value={formData.serviceType} onChange={handleChange}>
-            <option value="Domestic">Domestic</option>
-            <option value="International">International</option>
-          </select>
-        </label>
-        <label>
-          Country:
-          <select name="country" value={formData.country} onChange={handleChange}>
-            <option value="" disabled>Select your country</option>
-            {countries.map((country) => (
-              <option key={country} value={country}>
-                {country}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Pick up location:
-          <input className="boxcontents"
+    
+      <div className="service-type-buttons">
+        <button 
+          className={`sticelem ${formData.serviceType === 'domestic' ? 'active' : ''}`} 
+          onClick={() => setFormData({ ...formData, serviceType: 'domestic' })}
+        >
+          Domestic
+        </button>
+        <button
+          className={`sticelem2 ${formData.serviceType === 'international' ? 'active' : ''}`}
+          onClick={() => setFormData({ ...formData, serviceType: 'international' })}
+        >
+          International
+        </button>
+      </div>
+      <form  onSubmit={handleSubmit}>
+        <div >
+          {formData.serviceType === 'domestic' ? (
+            <select className="countryhooli"
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
+            >
+              <option value="">Select State</option>
+              <option value="Delhu">Delhi</option>
+              <option value="Hydrabad">Hydrabad</option>
+              <option value="Bangaluru">Bangaluru</option>
+              <option value="Vishakapatnam">Vishakapatnam</option>
+              <option value="goa">goa</option>
+
+             
+            </select>
+          ) : (
+            <select className="countryhooli"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+            >
+              <option value="">Select Country</option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+              <option value="Canada">Canada</option>
+              <option value="Australia">Australia</option>
+              <option value="India">India</option>
+              <option value="Russia">Russia</option>
+              <option value="China">China</option>
+              {/* Add more countries as needed */}
+            </select>
+          )}
+          {errors.country && <span className="error">{errors.country}</span>}
+        </div>
+        <div>
+          <label className="pickuplokk">Pick up location</label>
+          <input className="pickokdnnd"
             type="text"
-            name="pickupLocation"
-            value={formData.pickupLocation}
+            name="pickup"
+            value={formData.pickup}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Drop up location:
-          <input
+          {errors.pickup && <span className="error">{errors.pickup}</span>}
+        </div>
+        <div>
+          <label className="pickuplokk">Drop up location</label>
+          <input className="pickokdnnd"
             type="text"
-            name="dropoffLocation"
-            value={formData.dropoffLocation}
+            name="drop"
+            value={formData.drop}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Contact:
-          <input
+          {errors.drop && <span className="error">{errors.drop}</span>}
+        </div>
+        <div>
+          <label className="pickuplokk">Contact</label>
+          <input className="pickokdnnd"
             type="text"
             name="contact"
             value={formData.contact}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Shipping Date:
-          <input
+          {errors.contact && <span className="error">{errors.contact}</span>}
+        </div>
+        <div>
+          <label className="pickuplokk">Shipping Date</label>
+          <input className="pickokdnnd"
             type="date"
-            name="shippingDate"
-            value={formData.shippingDate}
+            name="date"
+            
+            value={formData.date}
             onChange={handleChange}
           />
-        </label>
-        <button className="submitbutt" type="submit">Get estimate</button>
+          {errors.date && <span className="error">{errors.date}</span>}
+        </div>
+        <button className="getestimatebuton" type="submit">Get estimate</button>
       </form>
     </div>
   );
-};
+}
 
 export default ServiceForm;

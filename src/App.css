@@ -69,9 +69,11 @@ main {
 }
 
 .service-form {
-  background-color: #f9f9f9;
+  background-color:  #F2F2F29E;
+  
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 25px;
+  width: 420px;
 }
 
 .service-form form div {
@@ -89,7 +91,7 @@ main {
   box-sizing: border-box;
 }
 
-.service-form button {
+.buttonElemrn {
   width: 181.42px;
   height: 39.13px;
   top: 555.1px;
