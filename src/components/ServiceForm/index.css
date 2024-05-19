@@ -7,6 +7,10 @@ text-align: left;
 
 }
 
+
+
+
+
  .sticelem{
 font-family: Inter;
 font-size: 12.67px;
@@ -85,6 +89,14 @@ margin-left: 190px;
     border-radius: 12px;
    border-width: 1px;
    border-color:#DADADA;
+
+}
+
+.pickokdnndee {
+    border-radius: 12px;
+   border-width: 0px;
+   border-color:#DADADA;
+   width: 12px;
 
 }
 

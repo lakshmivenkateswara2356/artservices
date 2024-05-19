@@ -130,7 +130,7 @@ function ServiceForm() {
         </div>
         <div>
           <label className="pickuplokk">Shipping Date</label>
-          <input className="pickokdnnd"
+          <input className="pickokdnndee"
             type="date"
             name="date"
             
