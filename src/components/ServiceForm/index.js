@@ -141,6 +141,7 @@ function ServiceForm() {
         </div>
         <button className="getestimatebuton" type="submit">Get estimate</button>
       </form>
+      <h1 className="pagenumintera">step 1/4</h1>
     </div>
     </div>
   );

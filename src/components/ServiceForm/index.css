@@ -18,7 +18,7 @@ font-weight: 700;
 line-height: 15.33px;
 text-align: left;
 width: 90px !important;
-height: 35px !important;
+height: 5px !important;
 background-color:gray;
 color: white;
 border-radius: 20px;
@@ -103,4 +103,15 @@ margin-left: 190px;
 
 .locationarr{
     margin-right: 312px;
+}
+
+.pagenumintera {
+    color: #444444;
+    font-family: Inter;
+font-size: 12.67px;
+font-weight: 700;
+line-height: 15.33px;
+text-align: center;
+margin-top: 152px;
+
 }
